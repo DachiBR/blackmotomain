@@ -9,9 +9,9 @@ const Header = () => {
     GE: {
       rental: "მოტოციკლების გაქირავება",
       company: "BLACKMOTO GE",
-      locations: "თბილისი | სკრიტველო",
+      locations: "თბილისი | საქართველო",
       phone: "+995 550 00 40 45",
-      about: "ჩვენ შესახებ",
+      about: "ჩვენს შესახებ",
       motorpark: "მოტოპარკი",
       terms: "პირობები",
       contacts: "კონტაქტები",
@@ -34,11 +34,13 @@ const Header = () => {
     <header className="header-container">
       <div className="header-content">
         <div className="logo-section">
-          <div className="logo">
-            <p>{translations[language].rental}</p>
-            <h1>{translations[language].company}</h1>
-            <p className="locations">{translations[language].locations}</p>
-          </div>
+        <div className="logo">
+      <img 
+      src="../../assets/Blackmoto_logocolo_white.png" 
+      alt="Logo" 
+      style={{ width: '100px', height: 'auto' }} 
+      />
+  </div>  
         </div>
 
         <div className="contact-section">

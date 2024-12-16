@@ -8,12 +8,20 @@
   
   /* Header Container */
   .header-container {
-    background-color: #1e1e1e;
+    background-color: #1e1e1e; /* fallback color */
     color: #fff;
     padding: 10px 20px;
     text-align: center;
     position: relative;
+  
+    /* Add background image */
+    background-image: url('../../assets/background.jpg'); /* Replace with your image path */
+    background-size: cover; /* Ensures the image covers the entire container */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    height: 200px; /* Adjust the height of the header as needed */
   }
+  
   
   /* Header Content */
   .header-content {
