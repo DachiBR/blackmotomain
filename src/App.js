@@ -1,10 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
-
+import { Header, Footer } from './components';
 function App() {
   return (
     <div className="App">
-      <h5>Black Moto</h5>
+      <Header />
+      <Footer />
     </div>
   );
 }
