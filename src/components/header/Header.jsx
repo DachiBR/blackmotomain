@@ -1,6 +1,7 @@
 import React from 'react';
 import { useLanguage } from '../../LanguageContext';
 import './header.css';
+import logo from "../../assets/Blackmoto_logocolo_white.png";
 
 const Header = () => {
   const { language, toggleLanguage } = useLanguage();
@@ -35,11 +36,7 @@ const Header = () => {
       <div className="header-content">
         <div className="logo-section">
         <div className="logo">
-      <img 
-      src="../../assets/Blackmoto_logocolo_white.png" 
-      alt="Logo" 
-      style={{ width: '100px', height: 'auto' }} 
-      />
+        <img src={logo} alt="Logo" style={{ width: "100px", height: "auto" }} />
   </div>  
         </div>
 
