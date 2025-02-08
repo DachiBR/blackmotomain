@@ -1,11 +1,16 @@
-import './App.css';
-import { Header, Footer } from './components';
+import "./App.css";
+import { Header, Footer, Main } from "./components";
+import { LanguageProvider } from "./LanguageContext";
+
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Footer />
-    </div>
+    <LanguageProvider>
+      <div className="App">
+        <Header />
+        <Main />
+        <Footer />
+      </div>
+    </LanguageProvider>
   );
 }
 
