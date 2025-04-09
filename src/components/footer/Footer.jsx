@@ -16,14 +16,14 @@ const Footer = () => {
       motorpark: "მოტოპარკი",
       terms: "პირობები",
       contacts: "კონტაქტები",
-      rights: "თბილისი 2023 ყველა უფლება დაცულია",
+      rights: "თბილისი 2025 ყველა უფლება დაცულია",
     },
     RU: {
       about: "О НАС",
       motorpark: "МОТОПАРК",
       terms: "УСЛОВИЯ",
       contacts: "КОНТАКТЫ",
-      rights: "Тбилиси 2023 Все права защищены",
+      rights: "Тбилиси 2025 Все права защищены",
     },
   };
 
@@ -41,10 +41,21 @@ const Footer = () => {
       </nav>
 
       <div className="footer-social">
-        <img src={instagramIcon} alt="Instagram" />
-        <img src={facebookIcon} alt="Facebook" />
-        <img src={whatsappIcon} alt="WhatsApp" />
-        <img src={telegramIcon} alt="Telegram" />
+<a href="https://www.instagram.com/blackmoto.ge/" target="_blank" rel="noopener noreferrer">
+  <img src={instagramIcon} alt="Instagram" className="icon" />
+</a>
+
+<a href="https://www.facebook.com/BlackMoto.Ge" target="_blank" rel="noopener noreferrer">
+  <img src={facebookIcon} alt="Facebook" className="icon" />
+</a>
+
+<a href="https://wa.me/+995 550004045" target="_blank" rel="noopener noreferrer">
+  <img src={whatsappIcon} alt="WhatsApp" className="icon" />
+</a>
+
+<a href="https://t.me/mixoushba" target="_blank" rel="noopener noreferrer">
+  <img src={telegramIcon} alt="Telegram" className="icon" />
+</a>
       </div>
 
       <p className="footer-rights">{translations[language].rights}</p>
