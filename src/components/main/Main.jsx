@@ -277,7 +277,7 @@ const MainPage = () => {
   <div className="map-container">
     <iframe
       title="Google Maps Location"
-      src="https://www.google.com/maps/embed?pb=!1m18..."
+      src="https://maps.app.goo.gl/7sVDR72K9C8Ema7F6"
       width="100%"
       height="300"
       frameBorder="0"
