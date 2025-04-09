@@ -60,31 +60,33 @@ h1 {
   .about-section {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center; /* center content better on all screen sizes */
     align-items: center;
-    padding: 20px;
+    gap: 40px; /* instead of relying on padding/margin for spacing between elements */
+    padding: 40px 20px;
     background-color: #1b1b1b;
     color: #fff;
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
   }
   
   .about-text {
-    flex: 1;
-    max-width: 500px;
-    padding: 20px;
-    text-align: left;
+    color: #e63946;
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
   }
   
   .about-text h3 {
     color: #e63946;
     font-size: 28px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     text-transform: uppercase;
   }
   
   .about-text p {
-    line-height: 1.8;
+    line-height: 1.7;
     font-size: 16px;
   }
   
@@ -99,6 +101,7 @@ h1 {
     width: 100%;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    object-fit: cover;
   }
   .main {
     flex: 1;
@@ -323,4 +326,46 @@ h1 {
       width: 30px;
     }
   }
+  @media (max-width: 768px) {
+    .about-section {
+      flex-direction: column;
+      text-align: center;
+      padding: 30px 10px;
+      gap: 20px;
+    }
   
+    .about-text {
+      padding: 0;
+      text-align: center;
+    }
+  
+    .about-text h3 {
+      font-size: 24px;
+    }
+  
+    .about-text p {
+      font-size: 15px;
+    }
+  
+    .about-image {
+      max-width: 100%;
+    }
+  
+    .hero-section {
+      flex-direction: column;
+      padding: 40px 10px;
+    }
+  
+    h1 {
+      font-size: 28px;
+    }
+  
+    .logo {
+      width: 100px;
+    }
+  
+    .rental-service h2 {
+      font-size: 18px;
+      padding: 0 10px;
+    }
+  }
