@@ -58,35 +58,41 @@ h1 {
   }
   
   .about-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; /* center content better on all screen sizes */
-    align-items: center;
-    gap: 40px; /* instead of relying on padding/margin for spacing between elements */
-    padding: 40px 20px;
-    background-color: #1b1b1b;
-    color: #fff;
+    background-color: #111;
+    padding: 60px 20px;
     border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
-    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    margin: 40px 0;
+  }
+
+  .about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
   }
   
   .about-text {
-    color: #e63946;
-    font-size: 28px;
-    margin-bottom: 15px;
-    text-transform: uppercase;
+    flex: 1;
+    min-width: 300px;
+    color: #eee;
   }
   
   .about-text h3 {
-    font-size: 28px;
-    margin-bottom: 15px;
+    font-size: 32px;
+    color: #e63946;
+    margin-bottom: 20px;
     text-transform: uppercase;
+    letter-spacing: 1.5px;
   }
   
   .about-text p {
-    line-height: 1.7;
-    font-size: 16px;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #ccc;
   }
   
   .about-text .highlight {
@@ -94,20 +100,46 @@ h1 {
     font-weight: bold;
   }
   
-  .about-image {
+  .about-image-container {
     flex: 1;
-    max-width: 400px;
-    width: 100%;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .about-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
     object-fit: cover;
   }
+
   .main {
     flex: 1;
     max-width: 400px;
     width: 100%;
     border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  }
+  @media (max-width: 768px) {
+    .about-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .about-text h3 {
+      font-size: 26px;
+    }
+  
+    .about-text p {
+      font-size: 16px;
+    }
+  
+    .about-image {
+      width: 90%;
+    }
   }
   
   .motorpark {
