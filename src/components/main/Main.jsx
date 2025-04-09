@@ -275,17 +275,18 @@ const MainPage = () => {
   </div>
 
   <div className="map-container">
-    <iframe
-      title="Google Maps Location"
-      src="https://maps.app.goo.gl/7sVDR72K9C8Ema7F6"
-      width="100%"
-      height="300"
-      frameBorder="0"
-      style={{ border: 0 }}
-      allowFullScreen
-      loading="lazy"
-    ></iframe>
-  </div>
+  <iframe
+    title="Google Maps Location"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d460.57007658386266!2d44.89759693653302!3d41.71786218485586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4044130051019fb9%3A0x97635bd0c07c9669!2sBlackmoto.GE!5e1!3m2!1sen!2sge!4v1744207020018!5m2!1sen!2sge"
+    width="100%"
+    height="300"
+    style={{ border: 0 }}
+    allowFullScreen=""
+    loading="lazy"
+    referrerPolicy="no-referrer-when-downgrade"
+  ></iframe>
+</div>
+
 </section>
 
     </div>
