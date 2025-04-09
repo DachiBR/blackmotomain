@@ -44,10 +44,22 @@ const Header = () => {
   {translations[language].langSwitch}
 </span>
 
-          <img src={instagramIcon} alt="Instagram" className="icon" />
-          <img src={facebookIcon} alt="Facebook" className="icon" />
-          <img src={whatsappIcon} alt="WhatsApp" className="icon" />
-          <img src={telegramIcon} alt="Telegram" className="icon" />
+<a href="https://www.instagram.com/blackmoto.ge/" target="_blank" rel="noopener noreferrer">
+  <img src={instagramIcon} alt="Instagram" className="icon" />
+</a>
+
+<a href="https://www.facebook.com/BlackMoto.Ge" target="_blank" rel="noopener noreferrer">
+  <img src={facebookIcon} alt="Facebook" className="icon" />
+</a>
+
+<a href="https://wa.me/+995 550004045" target="_blank" rel="noopener noreferrer">
+  <img src={whatsappIcon} alt="WhatsApp" className="icon" />
+</a>
+
+<a href="https://t.me/mixoushba" target="_blank" rel="noopener noreferrer">
+  <img src={telegramIcon} alt="Telegram" className="icon" />
+</a>
+
         </div>
       </div>
 

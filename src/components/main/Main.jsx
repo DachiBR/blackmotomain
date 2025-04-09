@@ -172,8 +172,8 @@ const MainPage = () => {
   </div>
   <p className="motorpark-info">
     {language === "GE"
-      ? "მომსახურება BlackMoto.GE დინამიურად ვითარდება, მოტოპარკი განახლდება ახალი მოტოციკლებით..."
-      : "Сервис BlackMoto.GE динамично развивается, мотопарк пополняется новыми мотоциклами..."}
+      ? "BlackMoto.GE-ს სერვისი დინამიურად ვითარდება, მოტოფონდი ახალი მოტოციკლებით ივსება. უახლოეს მომავალში ჩვენთან ჩამოვა 1000 მ3-ზე მეტი მოტოციკლები, უფრო გამოცდილი ბაიკერებისთვის. თვალი ადევნეთ ჩვენს სიახლეებს სოციალურ ქსელებში"
+      : "Сервис BlackMoto.GE динамично развивается, мотопарк пополняется новыми мотоциклами. В ближайшее время к нам прибудут мотоциклы свыше 1000 м3, для более опытных байкеров. Следите за нашими новостями в социальных сетях"}
   </p>
   <div className="social-icons">
     <img src={instagramIcon} alt="Instagram" />
@@ -245,8 +245,8 @@ const MainPage = () => {
       {language === "GE" ? "მისამართი:" : "Адрес:"}
     </strong>{" "}
     {language === "GE"
-      ? "ქ. თბილისი, ავთო ვარაზის 28ა, ლისის რაიონი, რაგბის სტადიონი კოჩები"
-      : "г. Тбилиси, ул. Авто Варази, 28а, район Лиси, ориентир стадион регби Кочеби"}
+      ? "ქ. თბილისი,თბილისი ზღვის მიმდებარედ"
+      : "г. Тбилиси, р-н Тбилисского моря"}
   </p>
 
   <p>
@@ -268,10 +268,10 @@ const MainPage = () => {
   </p>
 
   <div className="social-icons">
-    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+    <a href="https://www.instagram.com/blackmoto.ge/" target="_blank" rel="noopener noreferrer">
       <img src={instagramIcon} alt="Instagram" />
     </a>
-    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+    <a href="https://www.facebook.com/BlackMoto.Ge" target="_blank" rel="noopener noreferrer">
       <img src={facebookIcon} alt="Facebook" />
     </a>
   </div>
