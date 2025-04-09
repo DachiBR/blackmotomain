@@ -3,7 +3,7 @@ import { useLanguage } from '../../LanguageContext';
 import './header.css';
 import logo from '../../assets/Blackmoto_logocolo_white.png';
 
-import phoneIcon from '../../assets/phone.png';
+import phoneIcon from '../../assets/Phone.png';
 import instagramIcon from '../../assets/inst.png';
 import facebookIcon from '../../assets/fac.png';
 import whatsappIcon from '../../assets/what.png';
