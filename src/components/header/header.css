@@ -32,11 +32,6 @@
   color: #fff;
 }
 
-.header-container {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
 
 /* Top Section */
 .top-header {
