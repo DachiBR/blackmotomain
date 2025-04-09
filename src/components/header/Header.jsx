@@ -4,7 +4,6 @@ import './header.css';
 import logo from '../../assets/Blackmoto_logocolo_white.png';
 
 import phoneIcon from '../../assets/phone.png';
-import langIcon from '../../assets/lang.png';
 import instagramIcon from '../../assets/inst.png';
 import facebookIcon from '../../assets/fac.png';
 import whatsappIcon from '../../assets/what.png';
