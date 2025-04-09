@@ -11,14 +11,14 @@ import aboutImageGE from "../../assets/contactGE.png";
 import instagramIcon from "../../assets/inst.png";
 import facebookIcon from "../../assets/fac.png";
 import aboutImage from "../../assets/IMG_9678.jpg";
-
+import main from "../../assets/main.jpg";
 const MainPage = () => {
   const { language } = useLanguage();
 
   const content = {
     GE: {
       hero: "DRIVE FREEDOM ROCK'N'ROLL",
-      service: "მოტოციკლების გაქირავების სერვისი",
+      service: "მოტოციკლეტის გაქირავების სერვისი როკ-ენ-როლის ატმოსფეროთი",
       aboutTitle: "ჩვენს შესახებ",
       aboutText:
         "BlackMoto GE - მოტოციკლების გაქირავების სერვისი თბილისში, საქართველო...",
@@ -26,11 +26,12 @@ const MainPage = () => {
       motorpark: "მოტოპარკი",
       terms: "წესები და მოთხოვნები",
       contacts: "კონტაქტი",
+      main: main,
       aboutImage: aboutImageGE,
     },
     RU: {
       hero: "DRIVE FREEDOM ROCK'N'ROLL",
-      service: "СЕРВИС АРЕНДЫ МОТОЦИКЛОВ",
+      service: "СЕРВИС АРЕНДЫ МОТОЦИКЛОВ С АТМОСФЕРОЙ РОК-Н-РОЛЛА",
       aboutTitle: "О НАС",
       aboutText:
         "BlackMoto GE – сервис аренды мотоциклов в Тбилиси, Грузия. Мы вдохновлены свободой...",
@@ -38,6 +39,7 @@ const MainPage = () => {
       motorpark: "МОТОПАРК",
       terms: "УСЛОВИЯ И ТРЕБОВАНИЯ",
       contacts: "КОНТАКТЫ",
+      main: main,
       aboutImage: aboutImageRU,
     },
   };
@@ -55,6 +57,8 @@ const MainPage = () => {
       </section>
 
       <section className="about-section">
+
+
   <div className="about-text">
     <h3>{language === "GE" ? "ჩვენს შესახებ" : "О НАС"}</h3>
     <p>
@@ -64,11 +68,20 @@ const MainPage = () => {
         : "сервис аренды мотоциклов в Тбилиси, Грузия. Мы вдохновлены одним понятием – свобода. А свобода для нас ассоциируется с тремя словами – Грузия, мотоцикл, рок-н-ролл. Если тебе близка наша философия, если ты хочешь чувствовать эту атмосферу – мы готовы тебе помочь."}
     </p>
   </div>
+
+  <img
+    src={content[language].main || main}
+    alt={language === "GE" ? "ჩვენს შესახებ" : "О нас"}
+    className="main"
+  />
+
+
   <img
     src={content[language].aboutImage || aboutImage}
     alt={language === "GE" ? "ჩვენს შესახებ" : "О нас"}
     className="about-image"
   />
+  
 </section>
 
 
