@@ -12,6 +12,7 @@ import instagramIcon from "../../assets/inst.png";
 import facebookIcon from "../../assets/fac.png";
 import aboutImage from "../../assets/IMG_9678.jpg";
 import main from "../../assets/main.jpg";
+import logomain from"../../assets/logomainmoto.png";
 const MainPage = () => {
   const { language } = useLanguage();
 
@@ -49,7 +50,7 @@ const MainPage = () => {
       <header className="hero-section">
        
         <h1>{content[language].hero}</h1>
-        <img src={logo} alt="BlackMoto GE Logo" className="logo" />
+        <img src={logomain} alt="BlackMoto GE Logo" className="logo" />
       </header>
 
       <section className="rental-service">
