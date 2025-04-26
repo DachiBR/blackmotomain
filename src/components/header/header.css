@@ -5,6 +5,7 @@
   box-sizing: border-box;
   font-family: 'Arial', sans-serif;
 }
+
 .lang-toggle {
   font-size: 22px;
   font-weight: bold;
@@ -31,7 +32,6 @@
   padding: 20px;
   color: #fff;
 }
-
 
 /* Top Section */
 .top-header {
@@ -95,6 +95,7 @@
   color: #e63946;
 }
 
+/* Tablet and smaller */
 @media (max-width: 768px) {
   .top-header {
     flex-direction: column;
@@ -148,5 +149,34 @@
   .header-container {
     padding: 15px;
     background-position: right;
+  }
+}
+
+/* Mobile - Extra Small Screens */
+@media (max-width: 480px) {
+  .header-logo {
+    height: 80px;
+  }
+
+  .contact-info {
+    font-size: 16px;
+  }
+
+  .header-nav a {
+    font-size: 18px;
+  }
+
+  .lang-toggle {
+    font-size: 16px;
+    padding: 3px 6px;
+  }
+
+  .icon {
+    width: 25px;
+    height: 25px;
+  }
+
+  .icon.lang {
+    width: 35px;
   }
 }
