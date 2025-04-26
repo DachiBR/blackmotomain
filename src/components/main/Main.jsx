@@ -57,7 +57,7 @@ const MainPage = () => {
         <h2>{content[language].service}</h2>
       </section>
 
-      <section className="about-section">
+      <section id="about" className="about-section">
   <div className="about-content">
     <div className="about-text">
       <h3>{language === "GE" ? "ჩვენს შესახებ" : "О НАС"}</h3>
@@ -79,7 +79,7 @@ const MainPage = () => {
 </section>
 
 
-<section className="motorpark">
+<section  id="motorpark" className="motorpark">
 
 
       <p className="motorpark-in">
@@ -183,7 +183,7 @@ const MainPage = () => {
 </section>
 
 
-      <section className="terms-section">
+      <section  id="terms" className="terms-section">
   <h3>{language === "GE" ? "პირობები და მოთხოვნები" : "Условия и Требования"}</h3>
   <ul>
     <li>
@@ -238,7 +238,7 @@ const MainPage = () => {
 </section>
 
 
-      <section className="contact-section">
+      <section id="contacts" className="contact-section">
   <h3 className="contact-title">{content[language].contacts}</h3>
 
   <p>
