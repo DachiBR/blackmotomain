@@ -18,7 +18,7 @@ const MainPage = () => {
 
   const content = {
     GE: {
-      hero: "DRIVE <br> FREEDOM <br> ROCK'N'ROLL",
+      hero: "DRIVE FREEDOM ROCK'N'ROLL",
       service: "მოტოციკლეტის გაქირავების სერვისი როკ-ენ-როლის ატმოსფეროთი",
       aboutTitle: "ჩვენს შესახებ",
       aboutText:
@@ -31,7 +31,7 @@ const MainPage = () => {
       aboutImage: aboutImageGE,
     },
     RU: {
-      hero: "DRIVE <br> FREEDOM <br> ROCK'N'ROLL",
+      hero: "DRIVE FREEDOM ROCK'N'ROLL",
       service: "СЕРВИС АРЕНДЫ МОТОЦИКЛОВ С АТМОСФЕРОЙ РОК-Н-РОЛЛА",
       aboutTitle: "О НАС",
       aboutText:
